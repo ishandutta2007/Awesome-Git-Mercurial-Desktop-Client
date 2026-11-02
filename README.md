@@ -1,148 +1,194 @@
 # Awesome-Git-Mercurial-Desktop-Client
 
-# Awesome Git & Mercurial Desktop Client
+<div align="center">
 
-> A curated list of top Git and Mercurial desktop clients — both commercial/proprietary tools and open-source alternatives.  
-> 🌟 Star this repo if you find it useful! 🌟
+<img src="./assets/banner.svg" alt="Awesome Git and Mercurial Desktop Clients Banner" width="100%">
+
+# Awesome Git & Mercurial Desktop Clients
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-blue.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ishandutta2007/Awesome-Git-Mercurial-Desktop-Client)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-Git-Mercurial-Desktop-Client/pulls)
+
+**A curated, comprehensive directory of the best Git and Mercurial desktop GUI clients, terminal user interfaces (TUIs), and diff tools.**  
+*Benchmarked with transparent commercial pricing models, free-tier limits, company scale valuations, and GitHub star rankings.*
+
+[Explore SaaS & Proprietary Clients](#-commercial--proprietary-clients) • [Explore Open-Source Software](#-open-source-software) • [Comparison at a Glance](#-comparison-at-a-glance) • [Contributing](#-contributing)
+
+</div>
 
 ---
 
 ## 📋 Table of Contents
 
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
 - [Commercial / Proprietary Clients](#-commercial--proprietary-clients)
-  - [Sourcetree](#sourcetree)
-  - [GitKraken](#gitkraken)
-  - [GitHub Desktop](#github-desktop)
-  - [Tower](#tower)
-  - [Fork](#fork)
-  - [SmartGit](#smartgit)
-  - [Sublime Merge](#sublime-merge)
+  - [SaaS & Commercial Feature Matrix](#saas--commercial-feature-matrix)
+  - [Detailed Product Breakdown](#detailed-product-breakdown)
 - [Open-Source Software](#-open-source-software)
-  - [Magit](#magit)
-  - [TortoiseGit](#tortoisegit)
-  - [SourceGit](#sourcegit)
-  - [GitButler](#gitbutler)
-  - [GitWand](#gitwand)
-  - [Lazygit](#lazygit)
-  - [TortoiseHg](#tortoisehg)
+  - [Open-Source Ranked Breakdown](#open-source-ranked-breakdown)
 - [Comparison at a Glance](#-comparison-at-a-glance)
 - [Contributing](#-contributing)
+- [License](#-license)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The Version Control Systems (VCS) and source code management tooling market is estimated at **$1.22B to $1.48B**, expanding at a Compound Annual Growth Rate (CAGR) of **10.3% to 18.9%** toward **$2.7B+ to $5.8B** by the early 2030s. The industry displays a **two-tier market structure**: the underlying repository hosting layer is heavily concentrated in a winner-take-most dynamic dominated by Microsoft (GitHub), GitLab, and Atlassian (Bitbucket), whereas the desktop client and developer ergonomics layer remains **moderately fragmented**, fostering healthy competition between bootstrapped native GUI daily-drivers (Fork, Sublime Merge, Tower), venture-backed modern workflow engines (GitKraken, GitButler), and community-driven open-source powerhouses (Lazygit, Magit).
 
 ---
 
 ## 🟦 Commercial / Proprietary Clients
 
-Desktop Git clients that are free (sometimes with paid tiers) or commercially licensed. These are not open-source but are included as reference points for feature comparison.
+Desktop Git and Mercurial clients that are commercially licensed or proprietary-freeware with commercial tiers.
 
-### Sourcetree
-**Platforms:** Windows, macOS | **License:** Free (proprietary)  
-Atlassian's free Git and Mercurial GUI. Offers a clean visual interface for beginners while retaining power features like interactive rebase, Git-flow, Git LFS, and local commit search. Works seamlessly with Bitbucket and other hosting services [citation:3]. A solid choice for teams already in the Atlassian ecosystem.
+### SaaS & Commercial Feature Matrix
 
-### GitKraken
-**Platforms:** Windows, macOS, Linux | **License:** Free tier / Paid (~$10/mo Pro)  
-A full-featured commercial Git GUI with a polished visual graph, built-in merge conflict editor, interactive rebase, and AI-assisted commit messages. Integrates natively with GitHub, GitLab, Bitbucket, and Jira. The free tier covers public repos and basic workflows; Pro unlocks private repos and advanced features [citation:4][citation:13].
+> Sorted in descending order by parent company scale (valuation / annual revenue).
 
-### GitHub Desktop
-**Platforms:** Windows, macOS | **License:** Free (proprietary, source available)  
-GitHub's official desktop client, designed to hide Git complexity. Clone, branch, commit, push, and open PRs with minimal friction. The ideal choice for beginners or teams whose repositories live entirely on GitHub. Limitations include a basic diff viewer and no interactive rebase [citation:5][citation:13][citation:15].
+| Product | Parent Company & Scale (Valuation / Revenue) | Starting Tier Pricing | Free Tier Limit / Free Plan Scope | Supported Platforms | Mercurial (Hg) |
+|:---|:---|:---|:---|:---|:---:|
+| **[GitHub Desktop](https://desktop.github.com/)** | **Microsoft / GitHub**<br>`~$3.88T–$3.92T` Market Cap / `$1B+ ARR` | **$0.00** (Included with GitHub Free / Enterprise) | **Free Forever**: Unlimited public & private repositories, unlimited branches & commits. Requires a free GitHub account. No paid desktop tier. | Windows, macOS | ❌ |
+| **[Sourcetree](https://www.sourcetreeapp.com/)** | **Atlassian**<br>`~$48B–$56B` Market Cap / `~$4.4B ARR` | **$0.00** (Free proprietary enterprise desktop tool) | **Free Forever**: Full feature set for personal and commercial usage with unlimited repos. Requires signing in with a free Atlassian ID within 30 days. | Windows, macOS | ❌ *(Legacy win32 Hg deprecated; focused on Git)* |
+| **[GitKraken](https://www.gitkraken.com/)** | **GitKraken (Resurgens Tech Partners)**<br>`~$10.6M–$15M` ARR (Private Equity Backed) | **$8.00 / user / month** ($96 billed annually for Pro) | **14-day free trial** of Pro/Advanced features; downgrades to Free plan restricted strictly to **local repositories and public remotes** (no private cloud repos, no conflict prevention or AI commit tooling). | Windows, macOS, Linux | ❌ |
+| **[Tower](https://www.git-tower.com/)** | **saas.group (formerly fournova Software)**<br>`$100M+` Portfolio ARR / 100k+ Users | **$69.00 / user / year** (~$5.75/mo Basic Tier) | **30-day full-featured free trial**; no permanent free tier. Requires active paid subscription after 30-day evaluation. | Windows, macOS | ❌ |
+| **[Fork](https://git-fork.com/)** | **Danil & Tanya Pristupov**<br>`Bootstrapped Boutique` (Independent Dev Studio) | **$59.99 one-time** (Perpetual license for 3 personal machines) | **Uncapped evaluation period**: Full functionality evaluation mode with intermittent license purchase reminders; no hard calendar cutoff. | Windows, macOS | ❌ |
+| **[Sublime Merge](https://www.sublimemerge.com/)** | **Sublime HQ Pty Ltd**<br>`Bootstrapped Micro-ISV` (~7–10 Employees) | **$99.00 one-time** (Perpetual license + 3 years of software updates) | **Uncapped evaluation period**: Complete functionality available for evaluation without strict expiration; periodic registration reminder dialogs on commit. | Windows, macOS, Linux | ❌ |
+| **[SmartGit](https://www.syntevo.com/smartgit/)** | **syntevo GmbH**<br>`Self-funded Micro-ISV` (~3–5 Employees) | **$5.00 / user / month** (or perpetual options from ~$129) | **30-day commercial free trial**; **Free forever for verified non-commercial hobby use**, registered academic students, and open-source contributors (excludes enterprise Jira/GitHub Enterprise integrations). | Windows, macOS, Linux | ✅ |
 
-### Tower
-**Platforms:** Windows, macOS | **License:** Paid ($69/yr Basic, $129/yr Pro)  
-A premium native Git client known for polish and productivity features. Supports drag-and-drop, undo everything (⌘+Z), stacked branches, conflict wizard, interactive rebase, worktrees, and Git LFS. A favorite among professionals who want a finished, reliable daily driver [citation:6][citation:13].
+### Detailed Product Breakdown
 
-### Fork
-**Platforms:** Windows, macOS | **License:** Paid ($59.99 one-time)  
-A fast, native Git client with a calm interface. Includes interactive rebase, worktrees, file history, Git-flow, and custom actions. No Linux build, and PR support is create-and-view rather than full review. A strong choice for developers who prefer a one-time purchase over subscriptions [citation:7][citation:13].
+#### GitHub Desktop
+* **Website:** [desktop.github.com](https://desktop.github.com/)  
+* **Company:** Microsoft / GitHub (Scale: ~$3.9T Market Cap)  
+* **Pricing:** Free ($0)  
+* **Free Tier Limit:** Free forever without seat caps or private repo restrictions.  
+* **Platforms:** Windows, macOS (Community builds for Linux)  
+GitHub's official desktop application. Engineered to reduce Git overhead, it streamlines staging, branch creation, commit history inspection, and PR handoff with GitHub. Ideal for developers wanting a frictionless experience without complex plumbing operations.
 
-### SmartGit
-**Platforms:** Windows, macOS, Linux | **License:** Free (non-commercial) / Paid (commercial)  
-A mature Git and Mercurial client from Syntevo. Supports both version control systems natively, with a detailed file view, index editor for partial staging, and a Review layout. Free for non-commercial use; commercial licenses are available [citation:8].
+#### Sourcetree
+* **Website:** [sourcetreeapp.com](https://www.sourcetreeapp.com/)  
+* **Company:** Atlassian (Scale: ~$50B Market Cap)  
+* **Pricing:** Free ($0)  
+* **Free Tier Limit:** Free forever for individual and enterprise commercial use (requires Atlassian account activation).  
+* **Platforms:** Windows, macOS  
+Atlassian's veteran GUI client. Provides a comprehensive visual branch graph, interactive rebase, Git-flow branching scaffolding, Git LFS management, and seamless Bitbucket and Jira linkage.
 
-### Sublime Merge
-**Platforms:** Windows, macOS, Linux | **License:** Paid ($99 one-time, 3 years updates)  
-Built on Sublime Text's custom toolkit, Sublime Merge is exceptionally fast and transparent. Its standout feature is the command log: every action shows the exact Git command it ran, making it a learning tool as well as a client. No PR workflow and no AI features, but unmatched speed on large repositories [citation:9][citation:13].
+#### GitKraken Client
+* **Website:** [gitkraken.com](https://www.gitkraken.com/)  
+* **Company:** GitKraken / Resurgens Technology Partners (Scale: ~$10M–$15M ARR)  
+* **Pricing:** $8.00/user/mo (Pro, billed annually) | $14.00/user/mo (Advanced)  
+* **Free Tier Limit:** 14-day Pro trial; permanent Free tier limited to local and public repositories only.  
+* **Platforms:** Windows, macOS, Linux  
+A feature-dense commercial Git GUI offering a synchronized graph visualizer, in-app merge conflict resolution editor, workspace collaboration, deep issue-tracker integration, and AI-assisted commit summarization.
+
+#### Tower
+* **Website:** [git-tower.com](https://www.git-tower.com/)  
+* **Company:** saas.group / fournova (Scale: 100,000+ active developers)  
+* **Pricing:** $69.00/year (Basic) | $129.00/year (Pro)  
+* **Free Tier Limit:** 30-day unrestricted trial; requires annual paid license thereafter.  
+* **Platforms:** Windows, macOS  
+Regarded as the gold-standard native Git GUI for macOS and Windows power users. Features 1-click drag-and-drop rebasing, universal undo (Cmd+Z), multi-window worktrees, interactive stash inspection, and stacked branch management.
+
+#### Fork
+* **Website:** [git-fork.com](https://git-fork.com/)  
+* **Company:** Danil & Tanya Pristupov (Scale: Bootstrapped Indie Studio)  
+* **Pricing:** $59.99 one-time purchase per seat  
+* **Free Tier Limit:** Indefinite evaluation mode with non-intrusive reminder alerts.  
+* **Platforms:** Windows, macOS  
+A fast, lightweight native client with zero bloat. Delivers interactive rebasing, diff helper views, cherry-picking, submodules, and worktree isolation without recurring subscription fees.
+
+#### Sublime Merge
+* **Website:** [sublimemerge.com](https://www.sublimemerge.com/)  
+* **Company:** Sublime HQ Pty Ltd (Scale: Bootstrapped Indie Software Lab)  
+* **Pricing:** $99.00 one-time purchase (includes 3 years of software updates)  
+* **Free Tier Limit:** Unlimited evaluation trial with periodic registration prompts.  
+* **Platforms:** Windows, macOS, Linux  
+From the creators of Sublime Text, built with a custom C++ rendering pipeline. Notable for instantaneous repository indexing, zero-latency three-way conflict merging, and an explicit command palette showing raw underlying `git` commands.
+
+#### SmartGit
+* **Website:** [syntevo.com/smartgit](https://www.syntevo.com/smartgit/)  
+* **Company:** syntevo GmbH (Scale: Bootstrapped German ISV)  
+* **Pricing:** ~$5.00/month or ~$129 perpetual commercial license  
+* **Free Tier Limit:** 30-day trial for commercial teams; 100% free forever for hobbyists, educators, and open-source projects.  
+* **Platforms:** Windows, macOS, Linux  
+A versatile desktop workstation supporting both **Git and Mercurial**. Packed with an index editor, repository log filters, visual merge conflict resolving tools, and cross-platform consistency.
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven alternatives. All listed projects offer source code you can inspect, modify, and build yourself.
+Self-hosted, transparent, and community-engineered Git and Mercurial clients. Listed below in descending order by GitHub stargazers count, with each badge linking directly to the project's live stargazers page.
 
-### Magit
-**Stack:** Emacs Lisp | **License:** GPL-3.0 | **Platforms:** Anywhere Emacs runs  
-A complete Git porcelain inside Emacs. Magit is not just a GUI wrapper — it is deeply integrated into Emacs and allows experienced Git users to perform nearly all daily version control tasks without leaving the editor. Its keyboard-driven workflow has a learning curve, but for Emacs users it is often described as indispensable [citation:10].  
-**Best for:** Emacs users and keyboard-centric developers who want Git deeply integrated into their editing environment.
+### Open-Source Ranked Breakdown
 
-### TortoiseGit
-**Stack:** C++ / Windows Shell Extension | **License:** GPL-2.0 | **Platforms:** Windows  
-A Windows Explorer extension that brings Git operations directly into the right-click context menu. Icon overlays show file status at a glance. Features include commit, log viewer, revision graph, blame, rebase, stash, bisect, and submodule management. Not a standalone application — it integrates into Windows Explorer [citation:11].  
-**Best for:** Windows users who prefer working directly from File Explorer without a separate application window.
-
-### SourceGit
-**Stack:** C# | **License:** MIT | **Platforms:** Windows, macOS, Linux  
-A modern Git GUI client written in C#. Provides a visual branch graph, commit history, diff viewer, and essential Git operations. Actively maintained and packaged for Debian (RFP pending). A clean, cross-platform open-source alternative to heavier commercial clients [citation:12].  
-**Best for:** Developers seeking a straightforward, MIT-licensed GUI that works across all three major platforms.
-
-### GitButler
-**Stack:** Tauri + Rust | **License:** FSL → MIT | **Platforms:** Windows, macOS, Linux  
-A newer client that rethinks the branching model with **virtual branches**: work on multiple streams simultaneously in one working directory, then assign hunks to branches after the fact and push them as stacked PRs. Funded and actively developed. The trade-off is that it adds its own state alongside your repository [citation:13].  
-**Best for:** Developers who frequently juggle multiple changes at once and want a novel workflow for managing concurrent work streams.
-
-### GitWand
-**Stack:** Tauri 2 + Rust | **License:** MIT | **Platforms:** Windows, macOS, Linux  
-A classic-workflow Git client with a focus on **automatic merge conflict resolution**. Its deterministic engine auto-resolves approximately 95% of trivial conflict hunks with confidence scores and an auditable decision trace. Also includes full DAG history, in-app PR review across four forges (GitHub, GitLab, Bitbucket, Azure DevOps), interactive rebase, worktrees, and submodules. Keeps no state of its own — your repo remains vanilla Git [citation:13].  
-**Best for:** Teams and developers who want a complete classic client that eliminates the pain of recurring merge conflicts.
-
-### Lazygit
-**Stack:** Go | **License:** MIT | **Platforms:** Everywhere (terminal)  
-A terminal UI for Git. Lazygit provides a fast, keyboard-driven interface for staging, committing, branching, rebasing, and resolving conflicts without leaving the terminal. Lightweight, cross-platform, and beloved by developers who live in the command line [citation:13].  
-**Best for:** Terminal-centric developers who want visual Git feedback without a GUI application.
-
-### TortoiseHg
-**Stack:** Python / Windows Shell Extension | **License:** GPL-2.0 | **Platforms:** Windows, Linux (with file manager extensions)  
-A graphical frontend for **Mercurial**, the distributed version control system. Like TortoiseGit, it integrates into the file manager with icon overlays and context menus. Includes a commit dialog, revision history, and repository explorer. Available in Debian/Ubuntu repositories [citation:2][citation:14].  
-**Best for:** Mercurial users, particularly on Windows, who want a native file-manager-integrated client.
+| Rank | Client Name | Stars & Stargazers Link | Primary Stack | License | Platform Support | Highlights |
+|:---:|:---|:---:|:---|:---|:---|:---|
+| 1 | **[Lazygit](https://github.com/jesseduffield/lazygit)** | [![GitHub stars](https://img.shields.io/github/stars/jesseduffield/lazygit?style=social&color=white)](https://github.com/jesseduffield/lazygit/stargazers) | Go | MIT | Terminal (Cross-platform) | Fast terminal UI for staging, rebasing, and managing cherry-picks. |
+| 2 | **[GitHub Desktop](https://github.com/desktop/desktop)** | [![GitHub stars](https://img.shields.io/github/stars/desktop/desktop?style=social&color=white)](https://github.com/desktop/desktop/stargazers) | TypeScript / Electron | MIT | Windows, macOS, Linux | Official open-source desktop client frontend from GitHub. |
+| 3 | **[GitButler](https://github.com/gitbutlerapp/gitbutler)** | [![GitHub stars](https://img.shields.io/github/stars/gitbutlerapp/gitbutler?style=social&color=white)](https://github.com/gitbutlerapp/gitbutler/stargazers) | Rust / Tauri / Svelte | FSL-1.1-MIT | Windows, macOS, Linux | Virtual branches, simultaneous branch workstreams, and stacked PRs. |
+| 4 | **[Tig](https://github.com/jonas/tig)** | [![GitHub stars](https://img.shields.io/github/stars/jonas/tig?style=social&color=white)](https://github.com/jonas/tig/stargazers) | C / Ncurses | GPL-2.0 | POSIX, Linux, macOS, Win | High-speed text-mode ncurses interface and repository commit browser. |
+| 5 | **[GitUp](https://github.com/git-up/GitUp)** | [![GitHub stars](https://img.shields.io/github/stars/git-up/GitUp?style=social&color=white)](https://github.com/git-up/GitUp/stargazers) | Objective-C | GPL-3.0 | macOS | Direct-manipulation visual graph showing entire repo history without lag. |
+| 6 | **[Ungit](https://github.com/FredrikNoren/ungit)** | [![GitHub stars](https://img.shields.io/github/stars/FredrikNoren/ungit?style=social&color=white)](https://github.com/FredrikNoren/ungit/stargazers) | Node.js / JavaScript | MIT | Web / Browser / Electron | Intuitive node-based interactive graph visualizer running anywhere. |
+| 7 | **[Git Extensions](https://github.com/gitextensions/gitextensions)** | [![GitHub stars](https://img.shields.io/github/stars/gitextensions/gitextensions?style=social&color=white)](https://github.com/gitextensions/gitextensions/stargazers) | C# / .NET | GPL-3.0 | Windows, Linux | Comprehensive standalone Git GUI and Windows Shell context extension. |
+| 8 | **[Magit](https://github.com/magit/magit)** | [![GitHub stars](https://img.shields.io/github/stars/magit/magit?style=social&color=white)](https://github.com/magit/magit/stargazers) | Emacs Lisp | GPL-3.0 | Anywhere Emacs runs | The quintessential keyboard-driven Git porcelain for Emacs developers. |
+| 9 | **[SourceGit](https://github.com/sourcegit-scm/sourcegit)** | [![GitHub stars](https://img.shields.io/github/stars/sourcegit-scm/sourcegit?style=social&color=white)](https://github.com/sourcegit-scm/sourcegit/stargazers) | C# / Avalonia | MIT | Windows, macOS, Linux | Modern, lightweight, cross-platform open-source GUI client. |
+| 10 | **[Gitnuro](https://github.com/JetpackDuba/Gitnuro)** | [![GitHub stars](https://img.shields.io/github/stars/JetpackDuba/Gitnuro?style=social&color=white)](https://github.com/JetpackDuba/Gitnuro/stargazers) | Kotlin / Compose Multiplatform | GPL-3.0 | Windows, macOS, Linux | Sleek standalone multiplatform Git client with modern UI aesthetics. |
+| 11 | **[git-cola](https://github.com/git-cola/git-cola)** | [![GitHub stars](https://img.shields.io/github/stars/git-cola/git-cola?style=social&color=white)](https://github.com/git-cola/git-cola/stargazers) | Python / Qt | GPL-2.0 | Windows, macOS, Linux | Highly customizable, keyboard-oriented classic Qt Git frontend. |
+| 12 | **[Gittyup](https://github.com/Murmele/Gittyup)** | [![GitHub stars](https://img.shields.io/github/stars/Murmele/Gittyup?style=social&color=white)](https://github.com/Murmele/Gittyup/stargazers) | C++ / Qt | GPL-3.0 | Windows, macOS, Linux | Continuation of GitAhead with fast search, syntax highlight diffs, and submodules. |
+| 13 | **[GitAhead](https://github.com/gitahead/gitahead)** | [![GitHub stars](https://img.shields.io/github/stars/gitahead/gitahead?style=social&color=white)](https://github.com/gitahead/gitahead/stargazers) | C++ / Qt | MIT | Windows, macOS, Linux | Visual Git client with native look and feel, multi-repository search, and tree graphs. |
+| 14 | **[TortoiseGit](https://github.com/TortoiseGit/TortoiseGit)** | [![GitHub stars](https://img.shields.io/github/stars/TortoiseGit/TortoiseGit?style=social&color=white)](https://github.com/TortoiseGit/TortoiseGit/stargazers) | C++ / C | GPL-2.0 | Windows (Shell Extension) | Native Windows Explorer right-click context menu integration and icon overlays. |
+| 15 | **[GitWand](https://github.com/devlint/GitWand)** | [![GitHub stars](https://img.shields.io/github/stars/devlint/GitWand?style=social&color=white)](https://github.com/devlint/GitWand/stargazers) | Rust / Tauri 2 | MIT | Windows, macOS, Linux | Built-in deterministic auto-resolution for trivial merge conflicts with full audit trails. |
+| 16 | **[TortoiseHg](https://foss.heptapod.net/mercurial/tortoisehg/thg)** | *(Hosted on Heptapod)* | Python / PyQt / C++ | GPL-2.0 | Windows, Linux | The premier desktop and File Explorer interface for **Mercurial (Hg)** repositories. |
 
 ---
 
 ## 📊 Comparison at a Glance
 
-| Client | License | Platforms | Mercurial Support | Best For |
-|--------|---------|-----------|-------------------|----------|
-| **Sourcetree** | Free (proprietary) | Win, Mac | ✅ | Atlassian/Bitbucket users |
-| **GitKraken** | Free tier / Paid | Win, Mac, Linux | ❌ | Full commercial suite + AI |
-| **GitHub Desktop** | Free (proprietary) | Win, Mac | ❌ | Beginners on GitHub |
-| **Tower** | Paid | Win, Mac | ❌ | Polish + team workflows |
-| **Fork** | Paid (one-time) | Win, Mac | ❌ | Fast, calm daily driver |
-| **SmartGit** | Free non-commercial | Win, Mac, Linux | ✅ | Git + Mercurial in one |
-| **Sublime Merge** | Paid | Win, Mac, Linux | ❌ | Raw speed + transparency |
-| **Magit** | GPL-3.0 | Emacs | ❌ | Keyboard-driven Emacs users |
-| **TortoiseGit** | GPL-2.0 | Windows | ❌ | Explorer-integrated Windows |
-| **SourceGit** | MIT | Win, Mac, Linux | ❌ | Modern cross-platform OSS |
-| **GitButler** | FSL → MIT | Win, Mac, Linux | ❌ | Virtual branches / stacked PRs |
-| **GitWand** | MIT | Win, Mac, Linux | ❌ | Merge conflict resolution |
-| **Lazygit** | MIT | Terminal | ❌ | Terminal users |
-| **TortoiseHg** | GPL-2.0 | Win, Linux | ✅ | Mercurial users |
+| Client | Type | License | Platforms | Mercurial Support | Best For |
+|:---|:---|:---|:---|:---:|:---|
+| **Lazygit** | TUI | Open Source (MIT) | Terminal (Win, Mac, Linux) | ❌ | Command-line power users seeking keyboard speed |
+| **GitHub Desktop** | GUI | Hybrid / MIT App Core | Windows, macOS, Linux | ❌ | Beginners and developers working within GitHub |
+| **GitButler** | GUI | FSL-1.1 / MIT | Windows, macOS, Linux | ❌ | Developers juggling multiple concurrent virtual branches |
+| **Tig** | TUI | Open Source (GPL-2.0) | POSIX / Terminal | ❌ | Quick, blazing-fast terminal commit and log browsing |
+| **GitUp** | GUI | Open Source (GPL-3.0) | macOS | ❌ | Mac users looking for real-time visual graph interaction |
+| **Git Extensions** | GUI | Open Source (GPL-3.0) | Windows, Linux | ❌ | Windows/.NET developers wanting a powerful native suite |
+| **Sourcetree** | GUI | Free Proprietary | Windows, macOS | ❌ | Teams embedded in Atlassian Bitbucket/Jira workflows |
+| **GitKraken** | GUI | Commercial / Freemium | Windows, macOS, Linux | ❌ | Enterprise teams needing visual merge conflicts and AI tools |
+| **Magit** | Porcelain | Open Source (GPL-3.0) | Anywhere Emacs runs | ❌ | Emacs users desiring total keyboard Git mastery |
+| **SourceGit** | GUI | Open Source (MIT) | Windows, macOS, Linux | ❌ | Developers wanting a clean, MIT-licensed cross-platform GUI |
+| **Gitnuro** | GUI | Open Source (GPL-3.0) | Windows, macOS, Linux | ❌ | Clean, modern Compose Multiplatform Git interface |
+| **Fork** | GUI | Commercial (Perpetual) | Windows, macOS | ❌ | Developers seeking a fast, one-time-purchase native client |
+| **Sublime Merge** | GUI | Commercial (Perpetual) | Windows, macOS, Linux | ❌ | Maximum performance on massive repos with exact Git CLI commands |
+| **SmartGit** | GUI | Commercial / Free Non-Comm | Windows, macOS, Linux | ✅ | Unified cross-platform client with genuine Mercurial & Git support |
+| **TortoiseHg** | GUI / Shell | Open Source (GPL-2.0) | Windows, Linux | ✅ | Dedicated Mercurial users requiring native file manager integration |
+| **TortoiseGit** | Shell Ext | Open Source (GPL-2.0) | Windows | ❌ | Windows users who prefer File Explorer right-click operations |
+| **Tower** | GUI | Commercial (Subscription) | Windows, macOS | ❌ | Mac & Windows pros wanting a premium, polished daily driver |
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Git or Mercurial desktop client that should be listed here, please open a pull request with:
+Contributions are warmly welcomed! If you maintain or use a Git or Mercurial desktop client that should be featured in this directory:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source.
+1. Fork the repository.
+2. Add your tool to the appropriate table or section following the existing formatting conventions:
+   - Provide exact pricing or license terms (avoid generic "freemium" or "custom" descriptions).
+   - Verify GitHub star counts and active maintenance status.
+   - Specify whether Mercurial (Hg) is supported.
+3. Submit a Pull Request with a clear description of the project.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
+This repository and curated list are licensed under [Creative Commons Zero v1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/).  
+Individual featured software applications, logos, and trademarks are the property of their respective creators and organizations.
 
 ---
 
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+<div align="center">
+⭐ <b>Found this collection useful? Star this repository on GitHub!</b> ⭐
+</div>
